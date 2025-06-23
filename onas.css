@@ -1,0 +1,72 @@
+body {
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url('bg.jpg') no-repeat center center/cover;
+    min-height: 100vh; /* Umožní posouvání stránky */
+    overflow-y: auto; /* Povolení scrollování */
+}
+
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+.about-text {
+    max-width: 800px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 100px;
+    border-radius: 10px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px yellow;
+    
+}
+
+.about-title {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: yellow;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0); /* Žlutý rámeček */
+    border-radius: 10px; /* Zaoblené rohy */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Glow efekt */
+    width: 400px;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-height: 30px;
+
+   
+    
+}
+
+.section-title {
+    font-size: 48px;
+    color: yellow;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.8),
+                 0px 0px 20px rgba(255, 255, 0, 0.6),
+                 0px 0px 30px rgba(255, 255, 0, 0.4);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 100px;
+}

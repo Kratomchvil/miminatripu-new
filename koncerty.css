@@ -1,0 +1,117 @@
+    /* Resetování stylů */
+body, h1, h3, p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hlavní kontejner */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('bg.jpg') no-repeat center center/cover;
+    color: yellow;
+    font-family: Arial, sans-serif;
+}
+
+/* Nadpis */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+
+}
+
+/* Wrapper pro koncerty */
+.koncerty {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Každý koncert */
+.koncert {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    width: 200px;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.koncert:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px yellow;
+}
+
+/* Odkazy */
+.koncert a {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-top: 10px;
+    background: yellow;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.koncert a:hover {
+    background: black;
+    color: yellow;
+    border: 2px solid yellow;
+}
+
+
+.nav {
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2rem;
+        background-color: rgba(0, 0, 0, 0.9); /* Žlutá s průhledností */
+        padding: 15px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+
+    
+}
+.nav a {
+    color: yellow;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav a:hover {
+    color: orange;
+    background: black;
+}
+
+.koncerty-title {
+    font-size: 48px;
+    color: yellow;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.8), 
+    0px 0px 20px rgba(255, 255, 0, 0.6), 
+    0px 0px 30px rgba(255, 255, 0, 0.4);
+}
+
+.koncerty-title {
+    font-size: 48px;
+    color: yellow;
+    text-align: center;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px;
+}

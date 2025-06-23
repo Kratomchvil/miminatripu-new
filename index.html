@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIMINATRIPU official</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon_48x48.png"> 
+    <link rel="stylesheet" href="preloader.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    
+    <nav class="nav">
+        <a href="koncerty.html">Koncerty</a>
+        <a href="onas.html">O nás</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="merch.html">Merch</a>
+    </nav>
+
+    <div class="logo-container">
+        <img src="logo.jpg" alt="Logo MIMINATRIPU" class="logo">
+    </div>
+    <div class="title">MIMINATRIPU</div>
+
+    <div class="links">
+        <a href="https://spotify.com" target="_blank">
+            <img src="spotify.png" alt="Spotify" class="icon">
+            </a>
+            
+        <a href="https://www.instagram.com/miminatripu/" target="_blank">
+            <img src="instagram.png" alt="Instagram" class="icon">
+        </a>
+        <a href="https://youtube.com" target="_blank">
+            <img src="youtube.png" alt="Youtube" class="icon">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61577759039465" target="_blank">
+            <img src="facebook.png" alt="Facebook" class="icon">
+        </a>
+    </div>
+
+           <section class="extra-section">
+    <h2>Novinky</h2>
+    <p>💥 Tady bude text nebo obrázky o vaší kapele, merchu, nebo cokoliv chceš. 💥</p>
+</section>
+
+    <script>
+window.addEventListener("load", function() {
+    setTimeout(function() {
+        let preloader = document.getElementById("preloader");
+        preloader.classList.add("preloader-hidden");
+
+        // Po 0,5s (doba přechodu) úplně odstraníme preloader
+        setTimeout(() => {
+            preloader.style.display = "none";
+        }, 500); // Stejný čas jako transition v CSS
+    }, 500); // Preloader bude viditelný jen 0,5s místo 1,1s
+});
+    </script>
+</body>
+</html>

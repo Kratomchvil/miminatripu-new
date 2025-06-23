@@ -1,0 +1,77 @@
+/* kontakt.css */
+
+body {
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigace je převzatá ze style.css, takže tady není třeba znova */
+
+.kontakt-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px 60px;
+    text-align: center;
+}
+
+.kontakt-content h1 {
+    font-size: 3rem;
+    color:yellow ;
+    text-shadow: 0 0 15px yellow;
+    margin-bottom: 30px;
+}
+
+.kontakt-box {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border: 2px solid #ffcc00;
+    box-shadow: 0 0 25px #ffcc00;
+    border-radius: 20px;
+}
+
+.kontakt-box p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.kontakt-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.kontakt-box li {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+.kontakt-box a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.kontakt-box a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+.section-title {
+    font-size: 48px;
+    color: yellow;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.8),
+                 0px 0px 20px rgba(255, 255, 0, 0.6),
+                 0px 0px 30px rgba(255, 255, 0, 0.4);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 100px;
+}
